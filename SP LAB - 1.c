@@ -1,25 +1,18 @@
 #include <stdio.h>
 
 int main() {
-    int A, B, C;
-   printf("enter number :");
-    scanf("%d %d %d", &A, &B, &C);
+    int n;
 
-  if (A>=B){
-    if (A>=C){
-        printf("largest number is: %d\n",A);
-    }else{
-    printf("largest number is: %d\n",C);
+    printf("Enter number: ");
+    scanf("%d", &n);
+
+    if (n > 0) {
+        printf("positive\n");
+    } else if (n < 0) {
+        printf("negative\n");
+    } else {
+        printf("zero\n");
     }
-  }else{
-  if (B>=C){
-    printf("largest number is: %d\n",B);
-  }else{
-  printf("largest number is: %d\n",C);
-  }
-
-  }
-
 
     return 0;
 }
